@@ -4,15 +4,11 @@ public class Word {
     private ArrayList<Word> meaning;
 
     public Word( String w ) {
+	meaning = new ArrayList<Word>();
 	word = w;
     }
 
-    public Word( String w, String m ) {
-	word = w;
-	meaning.add(m);
-    }
-
-    public void addDef( String m ) {
+    public void addDef( Word m ) {
 	meaning.add(m);
     }
 
