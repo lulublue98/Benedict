@@ -1,10 +1,12 @@
 public class Script {
 
-    private ArrayList<String> lines;
+    private ArrayList<Line> lines;
 
     public Script() {
-	lines = new Arraylist<String>();
+	lines = new Arraylist<Line>();
     }
+
+    
 
 }
 
