@@ -1,9 +1,9 @@
 public class Dictionary {
 
-    private ArrayList[] dictionary;
+    private ArrayList<Word>[] dictionary;
 
     public Dictionary() {
-	dictionary = new ArrayList[26];
+	dictionary = new ArrayList<Word>[26];
     }
 
     public void addWord( String w ) {

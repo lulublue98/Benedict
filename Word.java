@@ -1,15 +1,19 @@
 public class Word {
 
     private String word;
-    private ArrayList<Word> meaning;
+    private String pos;
 
     public Word( String w ) {
-	meaning = new ArrayList<Word>();
 	word = w;
     }
 
-    public void addDef( Word m ) {
-	meaning.add(m);
+    public Word( String w; String p ) {
+	word = w;
+	pos = p;
+    }
+
+    public void setPOS( String p ) {
+	pos = p;
     }
 
 }
