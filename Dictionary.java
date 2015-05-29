@@ -26,4 +26,16 @@ public class Dictionary {
 	}
     }
 
+    public String getWord( String line ) {
+        for (int i=0;i<dictionary.length;i++) {
+	    for (int j=0;j<dictionary[i].size();i++) {
+		String w = dictionary[i].get(J).GetWord();
+		if ( line.getConditions().contains(w) ) {
+		    return w;
+		}
+	    }
+	}
+	return "error 404";
+    }
+
 }

@@ -16,4 +16,8 @@ public class Word {
 	pos = p;
     }
 
+    public String getWord() {
+	return word;
+    }
+
 }

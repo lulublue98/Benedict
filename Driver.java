@@ -1,5 +1,11 @@
 public class Driver {
     
-    private Benedict benedict;
+    public static void main( String args ) {
+	
+	Benedict B = new Benedict();
+	B.buildDictionaries();
+	B.buildScript();
+	
+    }
 
 }

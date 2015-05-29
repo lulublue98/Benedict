@@ -1,6 +1,6 @@
 public class Benedict {
 
-    private Dictionary dictionary;
+    private Dictionary nouns, verbs, adj;
     private Script script;
 
     public Benedict() {
@@ -8,7 +8,7 @@ public class Benedict {
 	script = new Script();
     }
 
-    public void buildDictionary() {
+    public void buildDictionaries() {
 
     }
 
@@ -16,12 +16,18 @@ public class Benedict {
 
     }
 
-    public String respond() {
-
+    // not yet complete
+    // return is a stand-in so the file will compile
+    public String respond( String l ) {
+	return;
     }   
     
-    public void parseline() {
+    public String parseline( String s ) {
 
+    }
+
+    public void learnLine( String s ) {
+	script.addLine(s);
     }
 
 }

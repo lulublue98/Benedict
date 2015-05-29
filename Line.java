@@ -11,4 +11,8 @@ public class Line {
 	conditions.add(c);
     }
 
+    public ArrayList<String> getConditions() {
+	return conditions;
+    }
+
 }
