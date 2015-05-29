@@ -1,11 +1,12 @@
 5/22/15
 
-Lulu - Created Script.java, Line.java, Driver.java, Nouns.txt, Adjs.txt, Verbs.txt, Script.txt
+Lulu 	- Created Script.java, Line.java, Driver.java, Nouns.txt, Adjs.txt, Verbs.txt, Script.txt
 
 5/28/15
 
-Max - Created XXX.java to read in text files
+Max 	- Created XXX.java to read in text files
 
 5/29/15
 
-Lulu - Created Test.java to test Benedict methods
+Lulu 	- Created Test.java to test Benedict methods
+	- Worked on Dictionary.java, Benedict.java, Line.java, Script.java, and Driver.java
