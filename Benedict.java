@@ -4,7 +4,9 @@ public class Benedict {
     private Script script;
 
     public Benedict() {
-	dictionary = new Dictionary();
+        nouns = new Dictionary("nouns.txt");
+        verbs = new Dictionary("verbs.txt");
+        adj = new Dictionary("adj.txt");
 	script = new Script();
     }
 

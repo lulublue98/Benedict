@@ -1,41 +1,35 @@
+import java.io.*;
+import java.util.*;
+
 public class Dictionary {
 
-    private ArrayList<Word>[] dictionary;
+    private ArrayList<String>[][] dictionary;
+    BufferedReader f;
+    PrintWriter out;
 
-    public Dictionary() {
-	dictionary = new ArrayList<Word>[26];
-    }
-
-    public void addWord( String w ) {
-	Word word = new Word(w);
-	char ch = w.charAt(0);
-	char[] alpha = { 'a', 'b', 'c', 'd', 'e', 'f',
-			 'g', 'h', 'i', 'j', 'k', 'l',
-			 'm', 'n', 'o', 'p', 'q', 'r',
-			 's', 't', 'u', 'v', 'w', 'x',
-			 'y', 'z' };
-	boolean in = false;
-	int index = 0;
-	while ( in == false ) {
-	    if ( ch == alpha[index] ) {
-		dictionary[index].add(word);
-		in = true;
-	    } else {
-		index = index + 1;
-	    }
+    public Dictionary(String file) {
+	dictionary = new ArrayList<String>[26][27];
+        f = new BufferedReader(new FileReader(file));
+        out = new PrintWriter(new BufferedWriter(new FileWriter(file)));
+        String s = f.readLine();
+	while(s!=null){
+            int x = (int)s.charAt(0)-97;
+            int y = (s.length()==1) ? 26 : (int)s.charAt(1)-97;
+            dictionary[x][y].add(s);
+	    s=f.readLine();
 	}
     }
 
-    public String getWord( String line ) {
-        for (int i=0;i<dictionary.length;i++) {
-	    for (int j=0;j<dictionary[i].size();i++) {
-		String w = dictionary[i].get(J).GetWord();
-		if ( line.getConditions().contains(w) ) {
-		    return w;
-		}
-	    }
-	}
-	return "error 404";
+    public void addWord(String w) {
+	int x = (int)w.charAt(0)-97;
+        int y = (w.length()==1) ? 26 : (int)w.charAt(1)-97;
+        dictionary[x][y].add(w);
+        out.println(w);
     }
 
+    public boolean hasWord(String w) {
+        int x = (int)w.charAt(0)-97;
+        int y = (w.length()==1) ? 26 : (int)w.charAt(1)-97;
+        return dictionary[x][y].contains(w);
+    }
 }
