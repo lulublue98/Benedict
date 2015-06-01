@@ -22,12 +22,20 @@ public class Benedict {
 	return;
     }   
     
-    public String parseline( String s ) {
+    public String parseLine( String s ) {
+	
+    }
+
+    public String buildLine( String s ) {
 
     }
 
     public void learnLine( String s ) {
 	script.addLine(s);
+    }
+
+    public void endProgram() {
+	
     }
 
 }
