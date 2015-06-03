@@ -1,7 +1,11 @@
+import java.util.*;
+import java.io.*;
+
 public class Benedict {
 
     private Dictionary nouns, verbs, adj;
     private Script script;
+    private boolean isTalking;
 
     public Benedict() {
         nouns = new Dictionary("nouns.txt");
@@ -10,20 +14,16 @@ public class Benedict {
 	script = new Script();
     }
 
-    public void buildDictionaries() {
-
+    public String addCondition( String command ) {
+	if ( command == "That is incorrect." ) {
+	    
+	}
     }
 
-    public void buildScript() {
-
-    }
-
-    // not yet complete
-    // return is a stand-in so the file will compile
     public String respond( String l ) {
 	return;
     }   
-    
+
     public String parseLine( String s ) {
 	
     }

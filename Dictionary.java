@@ -8,7 +8,7 @@ public class Dictionary {
     PrintWriter out;
 
     public Dictionary(String file) {
-	dictionary = new ArrayList<String>[26][27];
+	dictionary = new ArrayList[26][27];
         f = new BufferedReader(new FileReader(file));
         out = new PrintWriter(new BufferedWriter(new FileWriter(file)));
         String s = f.readLine();

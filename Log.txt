@@ -10,3 +10,13 @@ Max 	- Created XXX.java to read in text files
 
 Lulu 	- Created Test.java to test Benedict methods
 	- Worked on Dictionary.java, Benedict.java, Line.java, Script.java, and Driver.java
+
+6/2/15
+
+Max	- edited Dictionary.java constructor
+	- wrote Benedict.java constructor
+
+6/3/15
+
+Lulu	- attempted to compile all .java files
+	- debugged code

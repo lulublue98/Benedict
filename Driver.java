@@ -1,3 +1,6 @@
+import java.util.*;
+import java.io.*;
+
 public class Driver {
     
     public static void main( String args ) {
@@ -9,7 +12,7 @@ public class Driver {
 	boolean done = false;
 	while(!done){
 	    String out = B.respond(s.nextLine());
-	    if(out.equals("Good Bye")) done == true;
+	    if(out.equals("Good Bye")) done = true;
 	    System.out.println(out);
 	}
     }

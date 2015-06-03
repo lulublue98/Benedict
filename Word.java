@@ -7,7 +7,7 @@ public class Word {
 	word = w;
     }
 
-    public Word( String w; String p ) {
+    public Word( String w, String p ) {
 	word = w;
 	pos = p;
     }

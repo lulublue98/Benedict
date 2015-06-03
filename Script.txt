@@ -1,1 +1,19 @@
-Good Bye
+Do you like noun?
+Yes, I like noun.
+No, I do not like noun.
+Does noun verb?
+Yes, noun can verb.
+No, noun cannot verb.
+Is noun adj?
+Yes, noun is adj.
+No, noun is not adj.
+What is noun like?
+It is adj.
+Can you verb noun?
+Yes, I can verb noun.
+No, I cannot verb noun.
+What is noun?
+It is like noun.
+It is a kind of noun.
+It is adj.
+It is something you can verb.
