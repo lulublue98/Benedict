@@ -19,7 +19,7 @@ public class Script {
 	lines.add(new Line(s));
     }
 
-    public Arraylist<Line> getLines() {
+    public ArrayList<Line> getLines() {
 	ArrayList<Line> temp = lines;
 	return temp;
     }

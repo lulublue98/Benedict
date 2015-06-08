@@ -9,15 +9,17 @@ public class Dictionary {
 
     public Dictionary(String file) {
 	dictionary = new ArrayList[26][27];
-        f = new BufferedReader(new FileReader(file));
-        out = new PrintWriter(new BufferedWriter(new FileWriter(file)));
-        String s = f.readLine();
-	while(s!=null){
-            int x = (int)s.charAt(0)-97;
-            int y = (s.length()==1) ? 26 : (int)s.charAt(1)-97;
-            dictionary[x][y].add(s);
-	    s=f.readLine();
-	}
+        try{
+            f = new BufferedReader(new FileReader(file));
+            out = new PrintWriter(new BufferedWriter(new FileWriter(file)));
+            String s = f.readLine();
+            while(s!=null){
+                int x = (int)s.charAt(0)-97;
+                int y = (s.length()==1) ? 26 : (int)s.charAt(1)-97;
+                dictionary[x][y].add(s);
+                s=f.readLine();
+            }
+        }catch(Exception e){}
     }
 
     public void addWord(String w) {
