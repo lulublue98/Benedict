@@ -3,12 +3,12 @@ import java.io.*;
 
 public class Benedict {
 
-    //private Dictionary nouns, verbs, adj;
+    private Dictionary nouns, verbs, adj;
     //private Script script;
     //private boolean isTalking;
 
     public Benedict() {
-        //nouns = new Dictionary("nouns.txt");
+        nouns = new Dictionary("nouns.txt");
         //verbs = new Dictionary("verbs.txt");
         //adj = new Dictionary("adj.txt");
 	//script = new Script();
@@ -21,11 +21,18 @@ public class Benedict {
         }*/
 
     public String respond( String l ) {
-	if(l.equals("game")) return "Would you like to play nim, ___ or ___";
-        return "";
+		if(l.equals("game")) {
+			return "Would you like to play nim, ___ or ___?";
+		} else if (l.equals("Hello.")){
+			return "Hello. How are you?";
+		} else if (l.equals("Goodbye.")) {
+			return "Goodbye.";
+		} else {
+			return nouns.getWord(1,2,3);
+		}
     }
 
-    public void pause(int ms){
+    public void pause (int ms) {
         try {
             Thread.sleep(ms);
         } catch(InterruptedException ex) {
@@ -64,7 +71,7 @@ public class Benedict {
         if(nimB.losing()){
             System.out.println("I'll let you go first.");
         }else{
-            System.out.println("I'll go first");
+            System.out.println("I'll go first.");
             nimB.bMove();
         }
         while(!(nimB.done())){
@@ -76,7 +83,7 @@ public class Benedict {
     }
 
     public void endProgram() {
-	
+		
     }
 
 }

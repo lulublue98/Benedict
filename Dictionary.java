@@ -34,4 +34,13 @@ public class Dictionary {
         int y = (w.length()==1) ? 26 : (int)w.charAt(1)-97;
         return dictionary[x][y].contains(w);
     }
+	
+	public String getWord( int a, int b, int c ) {
+		return dictionary[a][b].get(c);
+	}
+	
+	public ArrayList<String> getDict(int a, int b) {
+		return dictionary[a][b];
+	}
+	
 }
