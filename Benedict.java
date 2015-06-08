@@ -8,9 +8,9 @@ public class Benedict {
     //private boolean isTalking;
 
     public Benedict() {
-        nouns = new Dictionary("nouns.txt");
-        //verbs = new Dictionary("verbs.txt");
-        //adj = new Dictionary("adj.txt");
+        nouns = new Dictionary("Nouns.txt");
+        verbs = new Dictionary("Verbs.txt");
+        adj = new Dictionary("Adj.txt");
 	//script = new Script();
     }
 
@@ -21,15 +21,15 @@ public class Benedict {
         }*/
 
     public String respond( String l ) {
-		if(l.equals("game")) {
-			return "Would you like to play nim, ___ or ___?";
-		} else if (l.equals("Hello.")){
-			return "Hello. How are you?";
-		} else if (l.equals("Goodbye.")) {
-			return "Goodbye.";
-		} else {
-			return nouns.getWord(1,2,3);
-		}
+	if(l.equals("game")) {
+	    return "Would you like to play nim, ___ or ___?";
+	} else if (l.equals("Hello.")){
+	    return "Hello. How are you?";
+	} else if (l.equals("Goodbye.")) {
+	    return "Goodbye.";
+	} else {
+	    return nouns.getWord(1,2,3);
+	}
     }
 
     public void pause (int ms) {
