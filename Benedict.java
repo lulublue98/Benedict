@@ -18,7 +18,8 @@ public class Benedict {
 	if ( command == "That is incorrect." ) {
 	    
 	}
-        }*/
+     }
+    */
 
     public String respond( String l ) {
 	if(l.equals("game")) {
