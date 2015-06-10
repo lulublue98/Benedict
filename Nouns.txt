@@ -277,7 +277,6 @@ brochure
 broker
 bronze
 brother
-brother-in-law
 brow
 brown
 brush
@@ -361,7 +360,6 @@ cauliflower
 cause
 caution
 cave
-c-clamp
 cd
 ceiling
 celery
@@ -777,7 +775,6 @@ farm
 farmer
 fat
 father
-father-in-law
 faucet
 fear
 feast
@@ -2162,7 +2159,7 @@ trowel
 truck
 trumpet
 trunk
-t-shirt
+tshirt
 tsunami
 tub
 tuba

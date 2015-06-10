@@ -28,7 +28,7 @@ public class Driver {
 			}
 	    	String out = B.respond(s.nextLine());
            	if(out.equals("Would you like to play nim, ___ or ___?")) ingame = true;
-	   		if (out.equals("Goodbye.")) done = true;
+	   		if (out.equals("Goodbye")) done = true;
 	   		System.out.println(out);
 		}	
     }

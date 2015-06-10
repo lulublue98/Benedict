@@ -25,7 +25,7 @@ public class Dictionary {
 	while(s!=null){
 	    int x = (int)s.charAt(0)-97;
 	    int y = (s.length()==1) ? 26 : (int)s.charAt(1)-97;
-	    dictionary[x][y].add(s);
+	    dictionary[x][y].add(s.toLowerCase());
 	    try{
 		s=f.readLine();
 	    }catch(IOException e){

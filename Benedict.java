@@ -10,7 +10,7 @@ public class Benedict {
     public Benedict() {
         nouns = new Dictionary("Nouns.txt");
         verbs = new Dictionary("Verbs.txt");
-        adj = new Dictionary("Adj.txt");
+        //adj = new Dictionary("Adjs.txt");
 	//script = new Script();
     }
 
@@ -22,14 +22,15 @@ public class Benedict {
     */
 
     public String respond( String l ) {
+	l = l.toLowerCase();
 	if(l.equals("game")) {
 	    return "Would you like to play nim, ___ or ___?";
-	} else if (l.equals("Hello.")){
-	    return "Hello. How are you?";
-	} else if (l.equals("Goodbye.")) {
-	    return "Goodbye.";
+	} else if (l.equals("hello")){
+	    return "Hello, how are you?";
+	} else if (l.equals("goodbye")) {
+	    return "Goodbye";
 	} else {
-	    return nouns.getWord(1,2,3);
+	    return "I don't understand.";
 	}
     }
 
