@@ -24,7 +24,7 @@ public class Benedict {
     public String respond( String l ) {
 	l = l.toLowerCase();
 	if(l.equals("game")) {
-	    return "Would you like to play nim, ___ or ___?";
+	    return "Would you like to play nim, ___ or othello?";
 	} else if (l.equals("hello")){
 	    return "Hello, how are you?";
 	} else if (l.equals("goodbye")) {
@@ -81,6 +81,18 @@ public class Benedict {
             nimB.bMove();
         }
         System.out.println("I win!");
+        return true;
+    }
+
+    public boolean othello(){
+        Scanner n = new Scanner(System.in);
+        othelloboard oB = new othelloboard('X');
+        while(!oB.gameOver()){
+            oB.printDots();
+            oB.pMove(n);
+            oB.printClean();
+            oB.bMove();
+        }
         return true;
     }
 
