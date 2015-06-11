@@ -10,7 +10,7 @@ public class Benedict {
     public Benedict() {
         nouns = new Dictionary("Nouns.txt");
         verbs = new Dictionary("Verbs.txt");
-        //adj = new Dictionary("Adjs.txt");
+        adj = new Dictionary("Adjs.txt");
 	//script = new Script();
     }
 
