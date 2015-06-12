@@ -4,19 +4,34 @@ import java.io.*;
 public class Script {
 
     private ArrayList<Line> lines;
+    BufferedReader f;
 
     public Script() {
 	lines = new ArrayList<Line>();
-        f = new BufferedReader(new FileReader("Script.txt"));
-        out = new PrintWriter(new BufferedWriter(new FileWriter("Script.txt")));
-        String s = f.readLine();
+	String s = null;
+	try {
+	    f = new BufferedReader(new FileReader("Script.txt"));
+	    s = f.readLine();
+	} catch(IOException e) {
+	    System.out.println("exception");
+	}
 	while(s!=null) {
-	    lines.addLine(s);
+	    Line l = new Line(s);
+	    lines.add(l);
+	    try{
+		s=f.readLine();
+	    }catch(IOException e){
+		System.out.println("exception");
+	    }
 	}
     }
 
     public void addLine( String s ) {
 	lines.add(new Line(s));
+    }
+
+    public Line getLine( int i ) {
+	return lines.get(i);
     }
 
     public ArrayList<Line> getLines() {
@@ -25,5 +40,3 @@ public class Script {
     }
 
 }
-
-

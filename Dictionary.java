@@ -5,7 +5,6 @@ public class Dictionary {
 
     private ArrayList<String>[][] dictionary;
     BufferedReader f;
-    PrintWriter out;
 
     public Dictionary(String file) {
 	dictionary = new ArrayList[26][27];
@@ -23,8 +22,8 @@ public class Dictionary {
 	    System.out.println("Can't find the file");
 	}
 	while(s!=null){
-	    int x = (int)s.charAt(0)-97;
-	    int y = (s.length()==1) ? 26 : (int)s.charAt(1)-97;
+	    int x = (int)s.toLowerCase().charAt(0)-97;
+	    int y = (s.toLowerCase().length()==1) ? 26 : (int)s.toLowerCase().charAt(1)-97;
 	    dictionary[x][y].add(s.toLowerCase());
 	    try{
 		s=f.readLine();

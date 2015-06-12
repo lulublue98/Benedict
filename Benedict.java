@@ -3,35 +3,37 @@ import java.io.*;
 
 public class Benedict {
 
-    private Dictionary nouns, verbs, adj;
-    //private Script script;
-    //private boolean isTalking;
+    private Dictionary nouns, verbs, adjs;
+    private Script script;
 
     public Benedict() {
         nouns = new Dictionary("Nouns.txt");
         verbs = new Dictionary("Verbs.txt");
-        adj = new Dictionary("Adjs.txt");
-	//script = new Script();
+        adjs = new Dictionary("Adjs.txt");
+	script = new Script();
     }
-
-    /* public String addCondition( String command ) {
-	if ( command == "That is incorrect." ) {
-	    
-	}
-     }
-    */
 
     public String respond( String l ) {
 	l = l.toLowerCase();
 	if(l.equals("game")) {
 	    return "Would you like to play nim, ___ or othello?";
-	} else if (l.equals("hello")){
-	    return "Hello, how are you?";
+	} else if (l.equals("let's talk")){
+	    return "Okay, what do you want to talk about?";
+	} else if (l.equals("hello")) {
+	    return "Hello";  
 	} else if (l.equals("goodbye")) {
 	    return "Goodbye";
+	} else if ( nouns.hasWord(l) == true ) {
+
+	} else if () {
+
 	} else {
 	    return "I don't understand.";
 	}
+    }
+
+    public String makeLine( String in ) {
+	String out;
     }
 
     public void pause (int ms) {
@@ -41,18 +43,6 @@ public class Benedict {
             Thread.currentThread().interrupt();
         }
     }
-
-    /*public String parseLine( String s ) {
-	
-    }
-
-    public String buildLine( String s ) {
-
-    }
-
-    public void learnLine( String s ) {
-	script.addLine(s);
-        }*/
     
     public boolean nim(){
         Scanner n = new Scanner(System.in);
