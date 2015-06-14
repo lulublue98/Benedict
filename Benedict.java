@@ -5,35 +5,28 @@ public class Benedict {
 
     private Dictionary nouns, verbs, adjs;
     private Script script;
+	private ArrayList<String> likes;
 
     public Benedict() {
         nouns = new Dictionary("Nouns.txt");
         verbs = new Dictionary("Verbs.txt");
         adjs = new Dictionary("Adjs.txt");
-	script = new Script();
+		script = new Script();
     }
 
     public String respond( String l ) {
-	l = l.toLowerCase();
-	if(l.equals("game")) {
-	    return "Would you like to play nim, ___ or othello?";
-	} else if (l.equals("let's talk")){
-	    return "Okay, what do you want to talk about?";
-	} else if (l.equals("hello")) {
-	    return "Hello";  
-	} else if (l.equals("goodbye")) {
-	    return "Goodbye";
-	} else if ( nouns.hasWord(l) == true ) {
-
-	} else if () {
-
-	} else {
-	    return "I don't understand.";
-	}
-    }
-
-    public String makeLine( String in ) {
-	String out;
+		l = l.toLowerCase();
+		if(l.equals("game")) {
+	    	return "Would you like to play nim, ___ or othello?";
+		} else if (l.equals("let's talk")){
+	    	return "Okay, what do you want to talk about?";
+		} else if (l.equals("hello")) {
+	 	   return "Hello";  
+		} else if (l.equals("goodbye")) {
+	 	   return "Goodbye";
+		} else {
+	   		return "I don't understand.";
+		}
     }
 
     public void pause (int ms) {
@@ -43,6 +36,12 @@ public class Benedict {
             Thread.currentThread().interrupt();
         }
     }
+	
+	/*
+	public String talk() {
+		
+	}
+  	  */
     
     public boolean nim(){
         Scanner n = new Scanner(System.in);
@@ -84,10 +83,6 @@ public class Benedict {
             oB.bMove();
         }
         return true;
-    }
-
-    public void endProgram() {
-		
     }
 
 }

@@ -1,0 +1,33 @@
+INSTRUCTIONS FOR USING BENEDICT
+
+Gameplay:
+
+1. To play a game, enter "game" at the start of the program. 
+
+2. Benedict will tell you if your entries are invalid during the game. 
+
+3. To exit the game, you must either play through to the end, or kill the program with the Terminal command ^C.
+
+4. Also, during a game, you must use the ^C to end the program overall.
+
+
+
+Conversation:
+
+1. There are a number of built in responses in Benedict's system. For instance, Benedict will always answer "hello" with "Hello". Also, if you enter something that he cannot interpret, he will answer "I don't understand".
+
+2. To start a conversation, enter "let's talk" at the start of the program.
+
+3. When Benedict asks "Okay, what do you want to talk about?", you can answer in a few ways:
+	a. By giving him a word
+		Benedict will then tell you if he knows this word. If he does, a conversation may be had from there.
+	b. By entering "likes and dislikes"
+		Benedict will then ask you if you like a number of things. You can ask if he likes something by ignoring his question and stating yours, not forgetting the "?" at the end.
+	c. By entering "tell me a story"
+		Benedict will tell you a stroy.
+
+4. To exit talking mode, enter "I am done talking". Then, you can start a game by entering "game".
+
+5. You can end the program at any time during conversation. To do so, enter "goodbye". Only in game mode is the kill command necessary.
+
+6. Benedict's interpretation system is not case sensitive, so as long as you follow the syntax rules, Benedict will understand you.
