@@ -18,15 +18,9 @@ Conversation:
 
 2. To start a conversation, enter "let's talk" at the start of the program.
 
-3. When Benedict asks "Okay, what do you want to talk about?", you can answer in a few ways:
-	a. By giving him a word
-		Benedict will then tell you if he knows this word. If he does, a conversation may be had from there.
-	b. By entering "likes and dislikes"
-		Benedict will then ask you if you like a number of things. You can ask if he likes something by ignoring his question and stating yours, not forgetting the "?" at the end.
-	c. By entering "tell me a story"
-		Benedict will tell you a story.
+3. When Benedict asks "Okay, what do you want to talk about?", give him a noun, verb, or adjective as a topic of conversation. 
 
-4. To exit talking mode, enter "I am done talking". Then, you can start a game by entering "game".
+4. To exit talking mode, enter "done". Then, you can start a game by entering "game".
 
 5. You can end the program at any time during conversation. To do so, enter "goodbye". Only in game mode is the kill command necessary.
 

@@ -9,7 +9,7 @@ public class Driver {
         Scanner s = new Scanner(System.in);
         boolean done = false;
         boolean ingame = false;
-		boolean talk = false;
+		boolean talking = false;
         System.out.println("Greetings, I'm Benedict the robot.");
 		System.out.println("If you're confused as to how to talk to me, please address my instructions file.");
         System.out.println("Let's have a conversation! Or type 'game' to play a game.");
@@ -29,13 +29,16 @@ public class Driver {
                        	System.out.println("Choose either 'nim' or 'othello'");
                     }
                	}
+				System.out.println("What do you want to do?");
 			}
-			if(talk) { 
-				System.out.println("talking");
+			if(talking) { 
+				String in = s.nextLine().toLowerCase();
+				B.talk(in);
+				talking = false;
 			}
             String out = B.respond(s.nextLine());
             if(out.equals("Would you like to play nim, ___ or othello?")) ingame = true;
-			if(out.equals("Okay, what do you want to talk about?")) talk = true;
+			if(out.equals("What do you want to talk about?")) talking = true;
             if (out.equals("Goodbye")) done = true;
             System.out.println(out);
         }	

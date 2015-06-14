@@ -58,7 +58,7 @@ public class nimboard{
         int r=0;
         int n=0;
         while(true){
-            System.out.println("Which row would you like to take from");
+            System.out.println("Which row would you like to take from?");
             r = nums.nextInt();
             System.out.println("How many coins do you want to remove?");
             n = nums.nextInt();

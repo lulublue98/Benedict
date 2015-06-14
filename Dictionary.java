@@ -49,6 +49,18 @@ public class Dictionary {
     public String getWord( int a, int b, int c ) {
 	return dictionary[a][b].get(c);
     }
+	
+	public String getRandomWord() {
+		Random r = new Random();
+		int a = r.nextInt(26);
+		int b = r.nextInt(26);
+		while (!(dictionary[a][b].size()>0)) {
+			a = r.nextInt(26);
+			b = r.nextInt(26);
+		}
+		int c = r.nextInt(dictionary[a][b].size());
+		return getWord(a,b,c);
+	}
     
     public ArrayList<String> getDict(int a, int b) {
 	return dictionary[a][b];

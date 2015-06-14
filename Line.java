@@ -17,5 +17,9 @@ public class Line {
     public ArrayList<String> getConditions() {
 	return conditions;
     }
+	
+	public String toString() {
+		return line;
+	}
 
 }

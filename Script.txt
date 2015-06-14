@@ -1,17 +1,16 @@
-How are you?
 I am adj.
 noun can verb.
 Can noun verb?
-Yes, noun can verb.
-No, noun cannot verb.
+noun can verb.
+noun cannot verb.
 Is noun adj?
-Yes, noun is adj.
-No, noun is not adj.
+noun is adj.
+noun is not adj.
 What is noun like?
 noun is adj.
 Can you verb noun?
-Yes, I can verb noun.
-No, I cannot verb noun.
+I can verb noun.
+I cannot verb noun.
 What is noun?
 noun is like noun.
 noun is a kind of noun.
