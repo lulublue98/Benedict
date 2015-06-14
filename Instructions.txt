@@ -24,7 +24,7 @@ Conversation:
 	b. By entering "likes and dislikes"
 		Benedict will then ask you if you like a number of things. You can ask if he likes something by ignoring his question and stating yours, not forgetting the "?" at the end.
 	c. By entering "tell me a story"
-		Benedict will tell you a stroy.
+		Benedict will tell you a story.
 
 4. To exit talking mode, enter "I am done talking". Then, you can start a game by entering "game".
 
