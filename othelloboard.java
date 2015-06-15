@@ -103,7 +103,7 @@ public class othelloboard{
     
     public int evaluate(){
         int out = 0;
-        int[][] values = {{50,-3,10,5},{-3,-10,0,0},{10,0,1,1},{5,0,1,0}};
+        int[][] values = {{50,-3,10,5},{-3,-10,0,0},{10,0,0,0},{5,0,0,0}};
         for(int i=1; i<=8; i++){
             int[] nums = values[Math.min(i,9-i)-1];
             for(int j=1; j<=8; j++){
@@ -115,7 +115,7 @@ public class othelloboard{
                 }
             }
         }
-        int[][] moveValues = {{10,0,4,4},{0,0,2,2},{4,2,2,2},{4,2,2,2}};
+        int[][] moveValues = {{10,0,5,3},{0,0,1,1},{5,1,1,1},{3,1,1,1}};
         boolean[][] moves = findMoves(player);
         for(int i=1; i<=8; i++){
             int[] nums = moveValues[Math.min(i,9-i)-1];

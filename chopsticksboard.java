@@ -64,7 +64,7 @@ public class chopsticksboard{
                         }else{
                             bHand=0;
                         }
-                    }else if(pH.equals("right")){
+                    }else if(bH.equals("right")){
                         if(board[1][1]==0){
                             System.out.println("Error: you cant hit an empty hand. Choose again.");
                             bH="";

@@ -48,13 +48,13 @@ public class Benedict {
         }
         l = l.replaceFirst(type,word);
         while (l.contains("verb")) {
-            //l = l.replaceFirst("verb",verbs.getRandomWord());
+            l = l.replaceFirst("verb",verbs.getRandomWord());
         }
         while (l.contains("noun")) {
-            //l = l.replaceFirst("noun",nouns.getRandomWord());
+            l = l.replaceFirst("noun",nouns.getRandomWord());
         }
         while (l.contains("adj")) {
-            //l = l.replaceFirst("adj",adjs.getRandomWord());			
+            l = l.replaceFirst("adj",adjs.getRandomWord());			
         }
         return l;
     }

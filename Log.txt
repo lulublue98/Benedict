@@ -4,7 +4,7 @@ Lulu 	- Created Script.java, Line.java, Driver.java, Nouns.txt, Adjs.txt, Verbs.
 
 5/28/15
 
-Max 	- Created XXX.java to read in text files
+Max 	- Created code to read in text files
 
 5/29/15
 
@@ -19,4 +19,38 @@ Max	- edited Dictionary.java constructor
 6/3/15
 
 Lulu	- attempted to compile all .java files
+	- wrote basic conversation interface
 	- debugged code
+
+6/6/15
+
+Max	- added games to conversation interface
+
+6/9/15
+
+Max 	- Coded nim
+
+6/10/15
+
+Max 	- Wrote basic othello code
+
+6/11/15
+
+Max	- Finished debugging othello code and set up round robin tournament to determine best heuristic values
+Lulu	- Added random replies to the conversation
+
+6/12/15
+
+Max	- Finalized othello heuristic values
+
+6/13/15
+
+Max	- Coded chopsticks
+
+6/14/15
+
+Max & Lulu	- Wrote README
+
+6/15/15
+
+Max 	- Finished debugging chopsticks and finished README
