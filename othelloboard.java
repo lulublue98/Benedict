@@ -31,14 +31,22 @@ public class othelloboard{
         }
     }
 
+    public void pause (int ms) {
+        try {
+            Thread.sleep(ms);
+        } catch(InterruptedException ex) {
+            Thread.currentThread().interrupt();
+        }
+    }
+
     public void printClean(){
-        System.out.println("  ABCDEFGH");
+        System.out.println("   A  B  C  D  E  F  G  H\n");
         for(int i=1; i<=8; i++){
-            String s = ""+i+" ";
+            String s = ""+i+"  ";
             for(int j=1; j<=8; j++){
-                s+=board[i][j];
+                s+=board[i][j]+"  ";
             }
-            System.out.println(s);
+            System.out.println(s+"\n");
         }
         System.out.println("\n");
     }
@@ -78,17 +86,17 @@ public class othelloboard{
 
     public void printDots(){
         boolean[][] dots = findMoves(player);
-        System.out.println("  ABCDEFGH");
+        System.out.println("   A  B  C  D  E  F  G  H\n");
         for(int i=1; i<=8; i++){
-            String s = ""+i+" ";
+            String s = ""+i+"  ";
             for(int j=1; j<=8; j++){
                 if(dots[i][j]){
-                    s+='*';
+                    s+='*'+"  ";
                 }else{
-                    s+=board[i][j];
+                    s+=board[i][j]+"  ";
                 }
             }
-            System.out.println(s);
+            System.out.println(s+"\n");
         }
         System.out.println("\n");
     }
@@ -211,6 +219,8 @@ public class othelloboard{
             return;
         }else{
             done=0;
+            System.out.println("I am taking square "+(char)(max[1]+64)+max[0]+".\n");
+            pause(1000);
             doMove(max[0],max[1],bot);
         }
     }
@@ -266,4 +276,24 @@ public class othelloboard{
             return false;
         }
     }
+
+    public int endGameTally(){
+        int p=0;
+        int b=0;
+        for(int i=1; i<=8; i++){
+            for(int j=1; j<=8; j++){
+                if(board[i][j]==player) p++;
+                if(board[i][j]==bot) b++;
+            }
+        }
+        System.out.println("We are both out of moves, so the game is over!");
+        System.out.println("In the end, there are "+p+" "+player+"'s and "+b+" "+bot+"'s.");
+        if(b>p){
+            return 1;
+        }else if(b==p){
+            return 2;
+        }else{
+            return 3;
+        }
+    }       
 }
